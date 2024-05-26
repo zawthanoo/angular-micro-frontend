@@ -1,0 +1,26 @@
+[
+    {
+        "flightNo": "ER-350",
+        "plane": "ATR725",
+        "departureDate": "2020-04-26T07:00",
+        "origin": "DAC",
+        "arrivalDate": "2020-04-26T07:55",
+        "destination": "CGP"
+    },
+    {
+        "flightNo": "VQ-901",
+        "plane": "ATR725",
+        "departureDate": "2020-04-26T07:00",
+        "origin": "DAC",
+        "arrivalDate": "2020-04-26T07:55",
+        "destination": "CGP"
+    },
+    {
+        "flightNo": "TG-526",
+        "plane": "ATR725",
+        "departureDate": "2020-04-26T07:00",
+        "origin": "DAC",
+        "arrivalDate": "2020-04-26T07:55",
+        "destination": "CGP"
+    }
+]

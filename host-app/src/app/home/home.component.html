@@ -1,0 +1,26 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Flight No.</th>
+            <th scope="col">Plane</th>
+            <th scope="col">Departure Date</th>
+            <th scope="col">Origin</th>
+            <th scope="col">Arrival Date</th>
+            <th scope="col">Destination</th>
+        </tr>
+    </thead>
+    <tbody class="table-group-divider">
+        <tr *ngFor="let flight of flightList; let i = index;">
+            <th scope="row">{{i + 1}}</th>
+            <td>{{flight.flightNo}}</td>
+            <td>{{flight.plane}}</td>
+            <td>{{flight.departureDate}}</td>
+            <td>{{flight.origin}}</td>
+            <td>{{flight.arrivalDate}}</td>
+            <td>{{flight.destination}}</td>
+            <td>{{flight.destination}}</td>
+            <td><button type="button" class="btn btn-primary" (click)="editFlight(flight)"> Edit </button></td>            
+        </tr>
+    </tbody>
+</table>

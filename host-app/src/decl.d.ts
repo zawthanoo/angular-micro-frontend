@@ -1,0 +1,1 @@
+declare module 'src/app/placeholder/remote-app-error.module';

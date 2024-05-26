@@ -1,0 +1,30 @@
+<div class="container">
+    <h3 *ngIf="addNewProcess">Register Flight</h3>
+    <h3 *ngIf="!addNewProcess">Edit  Flight</h3>
+    <div class="mb-3">
+        <label for="flightNoInput" class="form-label">Flight No.</label>
+        <input class="form-control" [readonly]="!addNewProcess" id="flightNoInput" [(ngModel)]="flight.flightNo">
+    </div>
+    <div class="mb-3">
+        <label for="planeInput" class="form-label">Plane</label>
+        <input class="form-control" id="planeInput" [(ngModel)]="flight.plane">
+    </div>
+    <div class="mb-3">
+        <label for="departureDateInput" class="form-label">Departure Date</label>
+        <input class="form-control" id="departureDateInput" [(ngModel)]="flight.departureDate">
+    </div>
+    <div class="mb-3">
+        <label for="originInput" class="form-label">Origin</label>
+        <input class="form-control" id="originInput" [(ngModel)]="flight.origin">
+    </div>
+    <div class="mb-3">
+        <label for="arrivalDateInput" class="form-label">Arrival Date</label>
+        <input class="form-control" id="arrivalDateInput" [(ngModel)]="flight.arrivalDate">
+    </div>
+    <div class="mb-3">
+        <label for="destinationInput" class="form-label">Destination</label>
+        <input class="form-control" id="destinationInput" [(ngModel)]="flight.destination">
+    </div>
+    <button type="button" class="btn btn-primary" *ngIf="addNewProcess" (click)="addFlight()">Add</button>
+    <button type="button" class="btn btn-primary" *ngIf="!addNewProcess" (click)="editFlight()">Edit</button>
+</div>
